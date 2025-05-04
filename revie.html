@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="assets/images/logo.jpg-96x73.jpg" type="image/x-icon">
+	
+    <title>Savorè Eatery : Review Order</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 60%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .total {
+            text-align: right;
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+        .btn-confirm {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+			margin-left: auto;
+			margin-right: auto;
+            cursor: pointer;
+        }
+        .btn-confirm:hover {
+            background-color: #218838;
+        }
+
+    </style>
+</head>
+<body>
+
+
+
+    <div class="container">
+        <h2>Your Order</h2>
+
+        <!-- Senarai Pesanan -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Food Name</th>
+                    <th>Qty</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pain au Choc</td>
+                    <td>2</td>
+                    <td>RM6.00</td>
+                    <td>RM12.00</td>
+                </tr>
+                <tr>
+                    <td>Caramel Machiato</td>
+                    <td>1</td>
+                    <td>RM8.90</td>
+                    <td>RM8.90</td>
+                </tr>
+                <tr>
+                    <td>Warm Water</td>
+                    <td>2</td>
+                    <td>RM2.00</td>
+                    <td>RM4.00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Jumlah Harga -->
+        <div class="total">
+            <p><strong>Total: RM24.90</strong></p>
+        </div>
+
+        <!-- Butang Add-->
+		 <a href="file:///D:/Desktop/website%20ain/finalised/5mei.html#features03-l">
+        <button class="btn-confirm">Add More Order</button>
+		<a/>
+		
+		 <!-- Butang Confirm -->
+		 <a href="file:///D:/Desktop/website%20ain/finalised/payment.html">
+        <button class="btn-confirm">Confirm Order</button>
+		</a>
+		
+		<!-- Butang Cancel -->
+		<a href= "file:///D:/Desktop/website%20ain/finalised/5mei.html">
+        <button class="btn-confirm">Cancel Order</button>
+		</a>
+		
+    </div>
+
+</body>
+</html>

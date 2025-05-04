@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="assets/images/logo.jpg-96x73.jpg" type="image/x-icon">
+    <title>Savorè Eatery : Payment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 70%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .payment-methods {
+            margin-top: 20px;
+        }
+        .payment-methods label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .payment-methods input[type="radio"] {
+            margin-right: 10px;
+        }
+        .card-details {
+            display: none;
+            margin-top: 20px;
+        }
+        .card-details input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .payment-summary {
+            margin-top: 30px;
+            text-align: right;
+            font-size: 1.2em;
+        }
+        .btn-confirm-payment {
+            display: block;
+            width: 50%;
+            padding: 10px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+			margin-left: auto;
+			margin-right: auto;
+        }
+        .btn-confirm-payment:hover {
+            background-color: #218838;
+        }
+		    .btn-back {
+            display: block;
+            width: 50%;
+            padding: 10px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+			margin-left: auto;
+			margin-right: auto;
+            cursor: pointer;
+        }
+        .btn-back:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Payment</h2>
+
+        <!-- Payment Methods -->
+        <div class="payment-methods">
+            <label>
+                <input type="radio" name="payment-method" value="credit-card" onclick="showCardDetails()"> Online Banking
+            </label>
+            <label>
+                <input type="radio" name="payment-method" value="cash-on-delivery" onclick="hideCardDetails()"> Pay at Counter
+            </label>
+            <label>
+                <input type="radio" name="payment-method" value="e-wallet" onclick="hideCardDetails()"> E-Wallet (Eg: GrabPay, Touch 'n Go)
+            </label>
+        </div>
+
+        <!-- Credit Card Details Form (Initially Hidden) -->
+        <div class="card-details" id="card-details">
+            <h3>Online Banking</h3>
+        </div>
+
+        <!-- Payment Summary -->
+        <div class="payment-summary">
+            <p><strong>Total Order: RM<span id="total-price-summary">25.90</span></strong></p>
+        </div>
+
+        <!-- Payment Confirmation Button -->
+        <button class="btn-confirm-payment" onclick="confirmPayment()">Confirm Payment</button>
+		
+		<a href = "file:///D:/Desktop/website%20ain/finalised/revie.html">
+		<button class="btn-back">Back</button>
+		</a>
+		
+    </div>
+
+    <script>
+        // Fungsi untuk sahkan pembayaran
+        function confirmPayment() {
+            const selectedPaymentMethod = document.querySelector('input[name="payment-method"]:checked');
+
+            alert('Pembayaran anda telah berjaya! Terima kasih.');
+        }
+    </script>
+
+</body>
+</html>
